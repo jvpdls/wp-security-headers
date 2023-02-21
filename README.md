@@ -1,4 +1,4 @@
-# Security Headers
+# Security Headers for WP
 Function to set up security headers on WP sites.
 
 This code considers the most common values for each header; you can adjust them to your website needs.

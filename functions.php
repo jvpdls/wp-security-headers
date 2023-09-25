@@ -1,6 +1,6 @@
 <?php 
 
-function security_headers() {
+function setSecurityHeaders() {
 	header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload');
 	header('X-Frame-Options: SAMEORIGIN');
 	header('X-Content-Type-Options:	nosniff');
@@ -8,4 +8,4 @@ function security_headers() {
 	header('Referrer-Policy: strict-origin-when-cross-origin');
 	header('Permissions-Policy: geolocation=(self), camera=(self), microphone=(self), payment=(self)');
 }
-add_action( 'send_headers', 'security_headers' );
+add_action( 'send_headers', 'setSecurityHeaders' );

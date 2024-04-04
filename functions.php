@@ -1,5 +1,6 @@
 <?php 
 
+// Add the code below to your site's functions.php file
 function setSecurityHeaders() {
 	header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload');
 	header('X-Frame-Options: SAMEORIGIN');
